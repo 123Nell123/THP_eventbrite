@@ -22,7 +22,21 @@ i = 0
     first_name: "bob#{i}",
     last_name: Faker::Name.last_name,
     description: Faker::Lorem.sentence,
-    email: "bob#{i}@yopmail.com"
+    email: "bob#{i}@yopmail.com",
+    password: "azerty"
   );
   i = i + 1
 end
+
+
+10.times do
+  event = Event.create!(
+    title: Faker::Movie.title,
+    location: Faker::Address.city,
+    description: Faker::Lorem.sentence,
+    price: 10
+  );
+  i = i + 1
+end
+
+

@@ -78,3 +78,14 @@ rails generate model Attendance stripe_customer_id:string
       t.timestamps
     end
 
+******
+routes
+
+rails g controller user new create show
+rails g controller attendance index show new create edit update destroy 
+rails g controller event index show new create edit update destroy 
+
+
+rails generate devise:controllers  -c =  
+
+ -c, [--controllers=one two three]              # Select specific controllers to generate (confirmations, passwords, registrations, sessions, unlocks, omniauth_callbacks)
