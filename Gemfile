@@ -69,3 +69,6 @@ gem 'better_errors'
 gem 'devise'
 gem 'dotenv'
 
+# If you use bundler, you can add this line to your Gemfile
+gem 'stripe'
+gem 'binding_of_caller'
